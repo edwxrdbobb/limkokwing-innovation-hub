@@ -373,7 +373,7 @@ export default function HomePage() {
           <BentoGrid>
             <BentoCard 
               className="border-chart-1/20 bg-gradient-to-br from-chart-1/5 to-transparent"
-              icon={<Rocket className="h-6 w-6 text-chart-1" />}
+              icon={<img src="/startup-incubation.jpg" alt="Start-ups Incubation" className="h-32 w-full object-cover" />}
               title="Start-ups Incubation (LEAP)"
               description="A 3-level hands-on and contextualized Lean Startup training model to help students build profitable products/services through our comprehensive nine-phase development process."
             >
@@ -397,7 +397,7 @@ export default function HomePage() {
 
             <BentoCard 
               className="border-chart-2/20 bg-gradient-to-br from-chart-2/5 to-transparent"
-              icon={<Code className="h-6 w-6 text-chart-2" />}
+              icon={<img src="/technology-workshop-students-coding.jpg" alt="TechConnect" className="h-32 w-full object-cover" />}
               title="TechConnect"
               description="A platform designed to connect students from different ICT-related degree programs. Creates a community for students to collaborate, learn, and share knowledge in technology through discussion forums, mentorship programs, job opportunities, and skill-building workshops."
             >
@@ -421,7 +421,7 @@ export default function HomePage() {
 
             <BentoCard 
               className="border-chart-3/20 bg-gradient-to-br from-chart-3/5 to-transparent"
-              icon={<Users className="h-6 w-6 text-chart-3" />}
+              icon={<img src="/modern-collaborative-workspace-students.jpg" alt="StartupsConnect" className="h-32 w-full object-cover" />}
               title="StartupsConnect"
               description="A platform designed to connect students from different entrepreneurship-related programs within Limkokwing University and its community. Creates a community for students to collaborate, learn, and share knowledge in entrepreneurship, with focus on startup ventures through discussion forums, mentorship programs, and startup-focused workshops."
             >
@@ -445,7 +445,7 @@ export default function HomePage() {
 
             <BentoCard 
               className="border-chart-4/20 bg-gradient-to-br from-chart-4/5 to-transparent"
-              icon={<GraduationCap className="h-6 w-6 text-chart-4" />}
+              icon={<img src="/event-029.jpg" alt="Lim Press Club" className="h-32 w-full object-cover" />}
               title="Lim Press Club"
               description="Provides intellectual and professional support to communication students, with the goal of creating a platform for broadcasting and journalism students to gain practical knowledge of the field of journalism outside of the classroom."
             >
@@ -469,7 +469,7 @@ export default function HomePage() {
 
             <BentoCard 
               className="border-chart-5/20 bg-gradient-to-br from-chart-5/5 to-transparent"
-              icon={<Building2 className="h-6 w-6 text-chart-5" />}
+              icon={<img src="/technology-lab-computers-equipment.jpg" alt="Corporate Innovation & Industry Partnership" className="h-32 w-full object-cover" />}
               title="Corporate Innovation & Industry Partnership"
               description="Connecting public and private sectors with entrepreneurs, creating a collaborative platform between government, industry, innovators, academia and start-ups/entrepreneurs to energize an active entrepreneurial ecosystem. Provides training, production and generation of new ideas, products and content powered by technology."
             >
@@ -493,7 +493,7 @@ export default function HomePage() {
 
             <BentoCard 
               className="border-chart-1/20 bg-gradient-to-br from-chart-1/5 to-transparent lg:col-span-2"
-              icon={<Award className="h-6 w-6 text-chart-1" />}
+              icon={<img src="/innovation-hub-event-presentation.jpg" alt="Success Stories" className="h-32 w-full object-cover" />}
               title="Success Stories"
             >
               <div className="space-y-6">
