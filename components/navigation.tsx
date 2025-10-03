@@ -16,13 +16,12 @@ export function Navigation() {
   const pathname = usePathname()
 
   return (
-    <nav className="sticky top-0 z-50 w-full max-w-7xl mx-auto border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+    <nav className="flex items-center justify-center sticky top-0 z-50 py-8 w-full w-full mx-auto border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 max-w-7xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-chart-1 to-chart-3">
-            <span className="font-mono text-xl font-bold text-white">L</span>
+          <div className="flex w-auto items-center justify-center rounded-lg ">
+            <img src="inno-hub-logo.jpg" alt="" className="h-14 w-auto rounded" />
           </div>
-          <span className="hidden font-semibold sm:inline-block">Innovation Hub</span>
         </Link>
 
         <div className="flex items-center gap-6">

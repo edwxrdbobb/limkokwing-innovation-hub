@@ -3,15 +3,14 @@ import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-card max-w-8xl mx-auto">
-      <div className="container py-12">
+    <footer className="border-t border-border bg-card w-full mx-auto">
+      <div className="container py-12 max-w-7xl mx-auto">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent">
-                <span className="font-mono text-xl font-bold text-accent-foreground">L</span>
+              <div className="flex h-10 w-auto items-center justify-center rounded-lg bg-accent">
+                <img src="inno-hub-logo.jpg" alt="" className="" />
               </div>
-              <span className="font-semibold">Limkokwing</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Empowering creativity and innovation through world-class education.

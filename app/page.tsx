@@ -225,12 +225,12 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="flex flex-col max-w-7xl mx-auto px-4">
-      <section className="relative min-h-screen overflow-hidden">
+    <div className="flex flex-col max-w-full mx-auto px-4">
+      <section className="relative min-h-screen overflow-hidden w-full mx-auto">
         {/* Full-width background image */}
         <div className="absolute inset-0">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20251002_162136_Samsung%20Notes-AwQNGkFxPT2Gygxolt3s8qldUoOucw.jpg"
+            src="inno-hub-banner.jpg"
             alt="Limkokwing Innovation Hub"
             fill
             className="object-cover"
@@ -281,7 +281,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="border-b border-border bg-card py-16">
+      <section className="border-b border-border bg-card py-16 max-w-7xl mx-auto">
         <div className="container">
           <div className="grid gap-8 md:grid-cols-4 text-center">
             <div className="text-center">
@@ -312,7 +312,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-20 max-w-7xl mx-auto">
         <div className="container text-center">
           <BentoGrid className="lg:grid-cols-2 max-w-6xl mx-auto">
             <BentoCard className="border-chart-1/20 bg-gradient-to-br from-chart-1/5 to-transparent">
@@ -342,9 +342,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-card py-20">
+      <section className="border-y border-border bg-card py-20 max-w-full mx-auto">
         <div className="container">
-          <div className="mb-12 text-center max-w-4xl mx-auto">
+          <div className="mb-12 text-center max-w-7xl mx-auto">
             <Badge className="mb-4 bg-chart-2/20 text-chart-2 hover:bg-chart-2/30">Our Facilities</Badge>
             <h2 className="mb-4 text-balance text-3xl font-bold md:text-4xl">Innovation Hub Showcase</h2>
             <p className="mx-auto max-w-2xl text-pretty text-muted-foreground">
@@ -357,7 +357,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative py-20">
+      <section className="relative py-20 max-w-7xl mx-auto">
         <BackgroundBeams />
         <div className="container relative z-10">
           <div className="mb-16 text-center max-w-4xl mx-auto">
@@ -529,7 +529,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-card py-20">
+      <section className="border-y border-border bg-card py-20 max-w-7xl mx-auto">
         <div className="container">
           <div className="mb-16 text-center max-w-4xl mx-auto">
             <Badge className="mb-4 bg-chart-3/20 text-chart-3 hover:bg-chart-3/30">
@@ -548,7 +548,7 @@ export default function HomePage() {
       </section>
 
       {/* Timeline Section for Roadmap */}
-      <section className="py-20">
+      <section className="py-20 max-w-7xl mx-auto">
         <div className="container">
           <div className="mb-16 text-center max-w-4xl mx-auto">
             <Badge className="mb-4 bg-chart-2/20 text-chart-2 hover:bg-chart-2/30">
@@ -566,7 +566,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative overflow-hidden py-20">
+      <section className="relative overflow-hidden py-20 max-w-7xl mx-auto">
         <div className="gradient-blur absolute left-1/3 top-1/2 h-96 w-96 rounded-full bg-chart-1" />
         <div className="gradient-blur absolute right-1/3 top-1/2 h-96 w-96 rounded-full bg-chart-3" />
 
