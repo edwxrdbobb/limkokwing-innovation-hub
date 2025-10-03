@@ -15,7 +15,7 @@ export interface SlideData {
 }
 
 interface CarouselProps {
-  slides: SlideData[]
+  slides: SlideData[] 
   className?: string
   autoPlay?: boolean
   autoPlayInterval?: number
@@ -92,7 +92,7 @@ export function Carousel({ slides, className, autoPlay = true, autoPlayInterval 
 
   return (
     <div 
-      className={cn("relative h-[600px] w-full overflow-hidden rounded-3xl bg-gradient-to-br from-black/5 via-transparent to-black/5 backdrop-blur-sm", className)}
+      className={cn("relative h-[800px] w-full overflow-hidden rounded-3xl bg-gradient-to-br from-black/5 via-transparent to-black/5 backdrop-blur-sm", className)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
