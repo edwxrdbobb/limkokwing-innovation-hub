@@ -1,0 +1,264 @@
+{
+  "programs": [
+    {
+      "id": "leap",
+      "title": "Start-ups Incubation (LEAP)",
+      "shortDescription": "A 3-level hands-on and contextualized Lean Startup training model to help students build profitable products/services through our comprehensive nine-phase development process.",
+      "fullDescription": "The Limkokwing Entrepreneurship Acceleration Program (LEAP) is a comprehensive startup incubation initiative designed to transform innovative ideas into successful businesses. Through our structured 3-level approach, participants receive hands-on training in lean startup methodologies, business model development, and market validation techniques.\n\nOur nine-phase development process guides entrepreneurs from ideation to market entry, providing the necessary tools, mentorship, and resources at each stage. The program emphasizes practical learning, real-world application, and iterative development to maximize the chances of building profitable and sustainable ventures.",
+      "imageSrc": "/startup-incubation.jpg",
+      "imageAlt": "Start-ups Incubation",
+      "galleryImages": [
+        {
+          "src": "/pitch-day-001.jpg",
+          "alt": "Pitch Day Presentation"
+        },
+        {
+          "src": "/pitch-day-group.jpg",
+          "alt": "Pitch Day Group Photo"
+        },
+        {
+          "src": "/pitch-day-speaking.jpg",
+          "alt": "Entrepreneur Pitching"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "colorIndex": 1,
+      "stats": [
+        { "label": "Success Rate", "value": "85%" },
+        { "label": "Startups Launched", "value": "120+" },
+        { "label": "Average Funding", "value": "$25K" },
+        { "label": "Program Duration", "value": "6 months" }
+      ],
+      "features": [
+        "Comprehensive business model development",
+        "Mentorship from industry experts",
+        "Access to funding opportunities",
+        "Networking with potential investors",
+        "Workspace and resources",
+        "Legal and administrative support"
+      ],
+      "testimonials": [
+        {
+          "quote": "LEAP transformed my idea into a viable business. The mentorship and resources provided were invaluable to my success.",
+          "author": "John Doe",
+          "company": "TechSolutions"
+        },
+        {
+          "quote": "The structured approach of LEAP helped me avoid common pitfalls and accelerated my path to market.",
+          "author": "Jane Smith",
+          "company": "EcoInnovate"
+        }
+      ],
+      "contactEmail": "leap@limkokwing.edu.sl",
+      "applicationLink": "/apply-now"
+    },
+    {
+      "id": "techconnect",
+      "title": "TechConnect",
+      "shortDescription": "A platform designed to connect students from different ICT-related degree programs. Creates a community for students to collaborate, learn, and share knowledge in technology through discussion forums, mentorship programs, job opportunities, and skill-building workshops.",
+      "fullDescription": "TechConnect is a vibrant community platform that bridges the gap between students across various ICT-related disciplines at Limkokwing University. The initiative fosters collaboration, knowledge sharing, and professional development through a combination of online and offline activities.\n\nMembers gain access to discussion forums where they can exchange ideas, seek help, and share resources. Our mentorship program pairs experienced professionals with students, providing guidance and career advice. Regular skill-building workshops cover emerging technologies and industry best practices, ensuring members stay at the cutting edge of technological advancement.",
+      "imageSrc": "/technology-workshop-students-coding.jpg",
+      "imageAlt": "TechConnect",
+      "galleryImages": [
+        {
+          "src": "/technology-lab-computers-equipment.jpg",
+          "alt": "Technology Lab"
+        },
+        {
+          "src": "/modern-collaborative-workspace-students.jpg",
+          "alt": "Collaborative Workspace"
+        },
+        {
+          "src": "/tech-connect.jpg",
+          "alt": "TechConnect Workshop"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "colorIndex": 2,
+      "stats": [
+        { "label": "Active Members", "value": "500+" },
+        { "label": "Monthly Events", "value": "8-12" },
+        { "label": "Industry Partners", "value": "25+" },
+        { "label": "Job Placements", "value": "150+" }
+      ],
+      "features": [
+        "Online discussion forums",
+        "Mentorship programs",
+        "Skill-building workshops",
+        "Hackathons and coding competitions",
+        "Industry networking events",
+        "Job and internship opportunities"
+      ],
+      "testimonials": [
+        {
+          "quote": "TechConnect helped me find my passion in web development and connected me with my first internship opportunity.",
+          "author": "Michael Johnson",
+          "company": "WebDev Solutions"
+        },
+        {
+          "quote": "The workshops and mentorship I received through TechConnect gave me the confidence to pursue a career in data science.",
+          "author": "Sarah Williams",
+          "company": "DataInsights"
+        }
+      ],
+      "contactEmail": "techconnect@limkokwing.edu.sl",
+      "applicationLink": "/join-techconnect"
+    },
+    {
+      "id": "startupsconnect",
+      "title": "StartupsConnect",
+      "shortDescription": "A platform designed to connect students from different entrepreneurship-related programs within Limkokwing University and its community. Creates a community for students to collaborate, learn, and share knowledge in entrepreneurship, with focus on startup ventures through discussion forums, mentorship programs, and startup-focused workshops.",
+      "fullDescription": "StartupsConnect is a dynamic platform that brings together entrepreneurially-minded students from across Limkokwing University's diverse programs. The initiative creates a supportive ecosystem where aspiring entrepreneurs can collaborate, share insights, and develop their business acumen.\n\nThrough our specialized discussion forums, members can exchange ideas, seek feedback, and find potential co-founders. Our mentorship program connects students with successful entrepreneurs who provide guidance based on real-world experience. Regular workshops focus on startup-specific topics such as business model validation, pitching, fundraising, and growth strategies.",
+      "imageSrc": "/modern-collaborative-workspace-students.jpg",
+      "imageAlt": "StartupsConnect",
+      "galleryImages": [
+        {
+          "src": "/startup-connect.jpeg",
+          "alt": "Startup Connect Event"
+        },
+        {
+          "src": "/meeting-001.jpg",
+          "alt": "Mentorship Meeting"
+        },
+        {
+          "src": "/innovation-hub-event-presentation.jpg",
+          "alt": "Startup Presentation"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "colorIndex": 3,
+      "stats": [
+        { "label": "Network Size", "value": "300+" },
+        { "label": "Collaborations", "value": "50+" },
+        { "label": "Startups Formed", "value": "35+" },
+        { "label": "Funding Secured", "value": "$1.2M+" }
+      ],
+      "features": [
+        "Entrepreneurship-focused discussion forums",
+        "Startup mentorship program",
+        "Business model workshops",
+        "Pitch practice sessions",
+        "Investor networking events",
+        "Co-founder matching service"
+      ],
+      "testimonials": [
+        {
+          "quote": "StartupsConnect helped me find my co-founder and refine our business model through valuable feedback from mentors.",
+          "author": "David Chen",
+          "company": "EcoDelivery"
+        },
+        {
+          "quote": "The pitch practice sessions gave me the confidence to present to investors, which ultimately led to our seed funding.",
+          "author": "Lisa Rodriguez",
+          "company": "HealthTech Solutions"
+        }
+      ],
+      "contactEmail": "startupsconnect@limkokwing.edu.sl",
+      "applicationLink": "/join-startupsconnect"
+    },
+    {
+      "id": "pressclub",
+      "title": "Lim Press Club",
+      "shortDescription": "Provides intellectual and professional support to communication students, with the goal of creating a platform for broadcasting and journalism students to gain practical knowledge of the field of journalism outside of the classroom.",
+      "fullDescription": "The Lim Press Club is a professional development initiative designed specifically for communication, broadcasting, and journalism students at Limkokwing University. The club bridges the gap between classroom theory and real-world practice by providing hands-on experience in various aspects of media production and journalism.\n\nMembers have the opportunity to work on actual publications, develop multimedia content, and participate in reporting on campus and community events. Through workshops led by industry professionals, students learn practical skills in interviewing, writing, editing, broadcasting, and digital media production that complement their academic studies.",
+      "imageSrc": "/event-029.jpg",
+      "imageAlt": "Lim Press Club",
+      "galleryImages": [
+        {
+          "src": "/LimPress.jpg",
+          "alt": "Lim Press Club Meeting"
+        },
+        {
+          "src": "/event-0830.jpg",
+          "alt": "Press Coverage Event"
+        },
+        {
+          "src": "/img105.jpg",
+          "alt": "Journalism Workshop"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "colorIndex": 4,
+      "stats": [
+        { "label": "Student Members", "value": "150+" },
+        { "label": "Publications", "value": "25+" },
+        { "label": "Media Partners", "value": "12" },
+        { "label": "Annual Events", "value": "8" }
+      ],
+      "features": [
+        "Hands-on journalism experience",
+        "Publication opportunities",
+        "Broadcasting practice",
+        "Media production workshops",
+        "Industry networking events",
+        "Portfolio development"
+      ],
+      "testimonials": [
+        {
+          "quote": "The Lim Press Club gave me real-world journalism experience that helped me land my first job at a national newspaper.",
+          "author": "Robert James",
+          "company": "Daily Chronicle"
+        },
+        {
+          "quote": "Through the club's workshops and publication opportunities, I developed a strong portfolio that showcased my abilities to potential employers.",
+          "author": "Maria Garcia",
+          "company": "Global Media Network"
+        }
+      ],
+      "contactEmail": "pressclub@limkokwing.edu.sl",
+      "applicationLink": "/join-pressclub"
+    },
+    {
+      "id": "corporate",
+      "title": "Corporate Innovation & Industry Partnership",
+      "shortDescription": "Connecting public and private sectors with entrepreneurs, creating a collaborative platform between government, industry, innovators, academia and start-ups/entrepreneurs to energize an active entrepreneurial ecosystem. Provides training, production and generation of new ideas, products and content powered by technology.",
+      "fullDescription": "The Corporate Innovation & Industry Partnership program serves as a vital bridge between Limkokwing University's entrepreneurial ecosystem and external stakeholders from both public and private sectors. This initiative creates a collaborative platform that brings together government agencies, industry leaders, innovators, academic institutions, and emerging startups to foster innovation and economic growth.\n\nThrough structured partnerships, the program facilitates knowledge transfer, resource sharing, and collaborative projects that address real-world challenges. We provide specialized training programs, innovation workshops, and co-creation opportunities that generate new ideas, products, and technology-powered solutions. The program also offers corporate partners access to fresh talent and innovative thinking, while providing entrepreneurs with industry insights, mentorship, and potential market opportunities.",
+      "imageSrc": "/technology-lab-computers-equipment.jpg",
+      "imageAlt": "Corporate Innovation & Industry Partnership",
+      "galleryImages": [
+        {
+          "src": "/modern-event-space-presentation.jpg",
+          "alt": "Corporate Partnership Event"
+        },
+        {
+          "src": "/img114.jpg",
+          "alt": "Industry Workshop"
+        },
+        {
+          "src": "/img82.jpg",
+          "alt": "Innovation Lab"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "colorIndex": 5,
+      "stats": [
+        { "label": "Partner Companies", "value": "50+" },
+        { "label": "Projects Completed", "value": "80+" },
+        { "label": "Government Partnerships", "value": "15" },
+        { "label": "Innovation Workshops", "value": "30+" }
+      ],
+      "features": [
+        "Corporate-startup collaboration",
+        "Innovation workshops and training",
+        "Co-creation projects",
+        "Technology transfer",
+        "Industry-specific challenges",
+        "Research and development support"
+      ],
+      "testimonials": [
+        {
+          "quote": "Partnering with Limkokwing's innovation hub has given our company access to fresh perspectives and innovative solutions to long-standing challenges.",
+          "author": "Thomas Wilson",
+          "company": "Sierra Telecom"
+        },
+        {
+          "quote": "The co-creation projects facilitated through this program have resulted in tangible improvements to our service delivery and customer experience.",
+          "author": "Elizabeth Brown",
+          "company": "National Bank of Sierra Leone"
+        }
+      ],
+      "contactEmail": "corporate@limkokwing.edu.sl",
+      "applicationLink": "/partner-with-us"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ interface BentoCardProps {
   className?: string
   index?: number
   background?: string
-  icon?: React.ReactNode
+  img?: React.ReactNode
   title?: string
   description?: string
 }
@@ -49,7 +49,7 @@ export function BentoCard({
   className,
   index = 0,
   background,
-  icon,
+  img,
   title,
   description,
 }: BentoCardProps) {
@@ -139,10 +139,10 @@ export function BentoCard({
       
       {/* Content */}
       <div className="relative z-10 h-full">
-        {/* Icon with glow effect */}
-        {icon && (
+        {/* img with glow effect */}
+        {img && (
           <motion.div
-            className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-500/20"
+            className="mb-6 flex h-58 w-full items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-500/20"
             animate={{
               boxShadow: isHovered 
                 ? "0 0 30px rgba(59, 130, 246, 0.5), 0 0 60px rgba(59, 130, 246, 0.2)"
@@ -152,13 +152,14 @@ export function BentoCard({
             transition={{ duration: 0.3 }}
           >
             <motion.div
+              className="h-full w-full object-cover rounded-2xl"
               animate={{
-                scale: isHovered ? 1.2 : 1,
-                rotate: isHovered ? 5 : 0,
+                scale: isHovered ? 1.15 : 1,
+                rotate: isHovered ? 1.5 : 0,
               }}
               transition={{ duration: 0.3 }}
             >
-              {icon}
+              {img}
             </motion.div>
           </motion.div>
         )}
