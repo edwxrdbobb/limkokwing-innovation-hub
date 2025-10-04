@@ -1,28 +1,24 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { StatsCounter } from "@/components/stats-counter"
-import { Carousel } from "@/components/ui/carousel"
 import { BackgroundBeams } from "@/components/ui/background-beams"
 import { Timeline } from "@/components/ui/timeline"
 import { BentoGrid, BentoCard } from "@/components/ui/bento-grid"
 import { AppleCardsCarousel } from "@/components/ui/apple-cards-carousel"
 import {
   ArrowRight,
-  Users,
   Rocket,
   Target,
-  TrendingUp,
   Building2,
-  Sparkles,
   Code,
-  GraduationCap,
   Calendar,
-  Award,
 } from "lucide-react"
+import HeroSection from "@/components/landing-page/hero-section"
+import StatSection from "@/components/landing-page/stat-section"
+import MissionAndVissionSection from "@/components/landing-page/mission-and-vision"
+import ShowcaseSection from "@/components/landing-page/showcase"
 
 export default function HomePage() {
   const showcaseSlides = [
@@ -226,136 +222,18 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col max-w-full mx-auto px-4">
-      <section className="relative min-h-screen overflow-hidden w-full mx-auto">
-        {/* Full-width background image */}
-        <div className="absolute inset-0">
-          <Image
-            src="inno-hub-banner.jpg"
-            alt="Limkokwing Innovation Hub"
-            fill
-            className="object-cover"
-            priority
-          />
-          {/* Gradient overlay for blending */}
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-        </div>
+      {/* hero section */}
+      <HeroSection />
 
-        <div className="container relative z-10 flex min-h-screen items-center justify-center py-20">
-          <div className="max-w-2xl space-y-8">
-            <Badge className="w-fit bg-chart-1/20 text-chart-1 hover:bg-chart-1/30 backdrop-blur-sm">
-              <Sparkles className="mr-2 h-3 w-3" />
-              Fostering Entrepreneurship, Creativity & Innovation
-            </Badge>
-
-            <h1 className="text-balance font-sans text-5xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
-              <span className="bg-gradient-to-r from-chart-1 via-chart-2 to-chart-3 bg-clip-text text-transparent">
-                Limkokwing
-              </span>
-              <br />
-              Innovation Hub
-            </h1>
-
-            <p className="max-w-xl text-pretty text-lg leading-relaxed text-foreground/90 md:text-xl">
-              An Entrepreneurship and Innovation support unit of Limkokwing University of Creative Technology, Sierra Leone Campus, fostering collaboration between academia, government, and industry.
-            </p>
-
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <Button size="lg" className="group bg-chart-1 hover:bg-chart-1/90" asChild>
-                <Link href="/programs">
-                  Explore Programs
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-chart-3 text-chart-3 hover:bg-chart-3/10 bg-background/80 backdrop-blur-sm"
-                asChild
-              >
-                <Link href="/about">Learn More</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Stats Section */}
-      <section className="border-b border-border bg-card py-16 max-w-7xl mx-auto">
-        <div className="container">
-          <div className="grid gap-8 md:grid-cols-4 text-center">
-            <div className="text-center">
-              <div className="mb-2 text-chart-1">
-                <StatsCounter end={500} suffix="+" />
-              </div>
-              <div className="text-sm text-muted-foreground">Startups Supported</div>
-            </div>
-            <div className="text-center">
-              <div className="mb-2 text-chart-2">
-                <StatsCounter end={1200} suffix="+" />
-              </div>
-              <div className="text-sm text-muted-foreground">Students Trained</div>
-            </div>
-            <div className="text-center">
-              <div className="mb-2 text-chart-3">
-                <StatsCounter end={50} suffix="+" />
-              </div>
-              <div className="text-sm text-muted-foreground">Industry Partners</div>
-            </div>
-            <div className="text-center">
-              <div className="mb-2 text-chart-4">
-                <StatsCounter end={85} suffix="%" />
-              </div>
-              <div className="text-sm text-muted-foreground">Success Rate</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <StatSection />
 
-      <section className="py-20 max-w-7xl mx-auto">
-        <div className="container text-center">
-          <BentoGrid className="lg:grid-cols-2 max-w-6xl mx-auto">
-            <BentoCard className="border-chart-1/20 bg-gradient-to-br from-chart-1/5 to-transparent">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-chart-1/20">
-                <Target className="h-6 w-6 text-chart-1" />
-              </div>
-              <h3 className="mb-4 text-2xl font-bold">Our Mission</h3>
-              <p className="leading-relaxed text-muted-foreground">
-                To foster innovation and entrepreneurial development in Sierra Leone through dynamic capacity building
-                programs and strengthening collaboration between academia, government, and industry.
-              </p>
-            </BentoCard>
+      {/* Mission and Vision Section */}
+      <MissionAndVissionSection />
 
-            <BentoCard className="border-chart-3/20 bg-gradient-to-br from-chart-3/5 to-transparent">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-chart-3/20">
-                <TrendingUp className="h-6 w-6 text-chart-3" />
-              </div>
-              <h3 className="mb-4 text-2xl font-bold">Our Vision</h3>
-              <p className="leading-relaxed text-muted-foreground">
-                To create a thriving and supportive ecosystem for entrepreneurs in Sierra Leone, where individuals have
-                the skills, knowledge, and resources they need to start and grow successful businesses. We envision a future
-                where entrepreneurship is an integral part of Sierra Leone's economic growth and development, and where
-                innovation and creativity are valued and nurtured.
-              </p>
-            </BentoCard>
-          </BentoGrid>
-        </div>
-      </section>
-
-      <section className="border-y border-border bg-card py-20 max-w-full mx-auto">
-        <div className="container max-w-full w-[2000px] mx-auto">
-          <div className="mb-12 text-center mx-auto">
-            <Badge className="mb-4 bg-chart-2/20 text-chart-2 hover:bg-chart-2/30">Our Facilities</Badge>
-            <h2 className="mb-4 text-balance text-3xl font-bold md:text-4xl">Innovation Hub Showcase</h2>
-            <p className="mx-auto max-w-2xl text-pretty text-muted-foreground">
-              Explore our state-of-the-art facilities and vibrant community spaces designed to foster creativity and
-              collaboration.
-            </p>
-          </div>
-
-          <Carousel slides={showcaseSlides} />
-        </div>
-      </section>
+    {/* Showcase */}
+    <ShowcaseSection showcaseSlides={showcaseSlides} />
 
       <section className="relative py-20 max-w-7xl mx-auto">
         <BackgroundBeams />
