@@ -52,7 +52,7 @@ export default function HomePage() {
       <ShowcaseSection showcaseSlides={showcaseSlides} />
 
       {/* Programs Section */}
-      <ProgramsSection />
+      <ProgramsSection isPrograms={false} />
 
       {/* Events Section */}
       <EventsSection />

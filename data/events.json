@@ -1,52 +1,52 @@
 {
   "events": [
     {
-      "id": "startup-weekend",
-      "title": "Startup Weekend",
-      "date": "2023-11-15",
-      "time": "9:00 AM - 5:00 PM",
-      "location": "Innovation Hub, Main Campus",
-      "description": "A 54-hour event where attendees pitch ideas, form teams, and start companies. Come with an idea or join a team to build a minimum viable product.",
-      "fullDescription": "Startup Weekend is an intensive 54-hour event where entrepreneurs, developers, designers, and business development professionals come together to share ideas, form teams, build products, and launch startups. Beginning with open mic pitches on Friday, attendees bring their best ideas and inspire others to join their team. Over Saturday and Sunday, teams focus on customer development, validating their ideas, practicing LEAN Startup Methodologies, and building a minimal viable product. On Sunday evening, teams demo their prototypes and receive valuable feedback from a panel of experts.",
-      "image": "/event-001.jpg",
-      "joinLink": "https://example.com/join-startup-weekend",
-      "tags": ["entrepreneurship", "networking", "pitching"]
+      "id": "career-fair-2025",
+      "title": "LIMKOKWING CAREER FAIR 2025",
+      "date": "2025-10-29",
+      "time": "10:00 AM – 4:30 PM",
+      "location": "Limkokwing University, Hill Station, Freetown",
+      "description": "Connect with top final-year students and skilled graduates in Sierra Leone at our Second Annual Career Fair!",
+      "fullDescription": "Are you looking to connect with top final-year students and skilled graduates in Sierra Leone? Join us as an employer at our Second Annual Career Fair!\n\n• Network with emerging talent\n• Promote your organisation and career opportunities\n• Shape the future workforce\n\nTheme: Bridging Talent and Opportunity\n\nLimited booth spaces available. Secure your spot now!\n\nContact: +232 76838435 or bashir.mohammad@limkokwing.edu.sl\n#LUCTCareerFair2025\nLet's shape the future together!",
+      "image": "/event-029.jpg",
+      "joinLink": "https://forms.gle/1dGasDuo33naHN5y5",
+      "tags": ["career", "networking", "employment"]
     },
     {
-      "id": "tech-talk",
-      "title": "Tech Talk: AI in Business",
-      "date": "2023-12-05",
-      "time": "2:00 PM - 4:00 PM",
-      "location": "Auditorium, Technology Building",
-      "description": "Join us for an insightful discussion on how artificial intelligence is transforming business operations and creating new opportunities.",
-      "fullDescription": "This Tech Talk will explore the rapidly evolving landscape of artificial intelligence in business applications. Our panel of industry experts will discuss current AI implementations across various sectors, challenges in adoption, ethical considerations, and future trends. Attendees will gain practical insights on how businesses can leverage AI technologies to improve efficiency, enhance customer experiences, and create competitive advantages. The session will include case studies, live demonstrations, and a Q&A segment where participants can engage directly with our speakers.",
-      "image": "/event-002.jpg",
-      "joinLink": "https://example.com/join-tech-talk",
-      "tags": ["technology", "artificial intelligence", "business"]
+      "id": "pitch-day-highlights",
+      "title": "End-of-Semester Pitch Day Highlights",
+      "date": "2024-09-11",
+      "time": "Full Day Event",
+      "location": "Faculty of Business Management & Globalisation",
+      "description": "A resounding success showcasing student innovation and entrepreneurship with industry partners and distinguished judges.",
+      "fullDescription": "On 11th September, the Faculty of Business Management & Globalisation in collaboration with the Limkokwing Innovation Hub hosted our End-of-Semester Pitch Day—and it was a resounding success!\n\nWe extend our heartfelt appreciation to our partners Capitol Foods, Black Gold Creative Studio, and StarrTix, whose support made this event possible. Special thanks to our keynote speaker Emma Fofanah for her inspiring words, and to our distinguished judges Colin Ogoo, Joyce Abigail Coulson-Olowu, Joe Yilla, and Sam Moi, for their invaluable insights.\n\nTogether, we are shaping the next generation of innovators and entrepreneurs in Sierra Leone.",
+      "image": "/event-0830.jpg",
+      "joinLink": "#",
+      "tags": ["pitching", "innovation", "entrepreneurship"]
     },
     {
-      "id": "hackathon",
-      "title": "Innovation Hackathon",
-      "date": "2024-01-20",
-      "time": "10:00 AM - 8:00 PM",
-      "location": "Computer Labs, Engineering Building",
-      "description": "A day-long coding competition where teams work together to solve real-world problems through technology solutions.",
-      "fullDescription": "The Innovation Hackathon is a high-energy, collaborative coding event where participants form teams to tackle real-world challenges through technology solutions. This year's theme focuses on sustainable development, with problem statements provided by local businesses and community organizations. Teams will have 10 hours to conceptualize, design, and develop working prototypes that address these challenges. Mentors from industry and academia will be available throughout the event to provide guidance and support. The day concludes with team presentations and judging, with prizes awarded for the most innovative, impactful, and technically impressive solutions.",
-      "image": "/event-003.jpg",
-      "joinLink": "https://example.com/join-hackathon",
-      "tags": ["coding", "teamwork", "problem-solving"]
+      "id": "itc-ready-salone-sessions",
+      "title": "ITC READY Salone Training Sessions",
+      "date": "2024-09-01",
+      "time": "Multiple Sessions",
+      "location": "Limkokwing Innovation Hub",
+      "description": "Transformative training sessions on pitch perfect techniques and AI for digital freelancers in partnership with ITC READY Salone.",
+      "fullDescription": "Last week, we proudly hosted two transformative sessions in partnership with the ITC READY Salone project:\n\n1. Pitch Perfect Training – Over 50 startup founders, including 10+ women, explored how to craft compelling pitch decks and connect with investors.\n\n2. AI for Digital Freelancers Training – At our monthly freelancer meetup, 60+ participants (including 20+ women) engaged in a practical session on using AI as a productivity partner. Led by Martin Labbé and local co-trainer Abu Theodore Maxwell Rogers.\n\nSpecial thanks to Korea International Cooperation Agency (KOICA), International Trade Centre (ITC), in collaboration with the Government of Sierra Leone, Ministries of Youth Affairs, Communication, Technology and Innovation, and Trade and Industry.\n\nWe remain committed to building capacity, nurturing innovation, and supporting Sierra Leone's entrepreneurial ecosystem.",
+      "image": "/innovation-hub-event-presentation.jpg",
+      "joinLink": "#",
+      "tags": ["training", "AI", "freelancing", "pitching"]
     },
     {
-      "id": "design-workshop",
-      "title": "UX Design Workshop",
-      "date": "2024-02-10",
-      "time": "1:00 PM - 5:00 PM",
-      "location": "Design Studio, Creative Arts Building",
-      "description": "Learn the fundamentals of user experience design and apply them to create intuitive, user-friendly digital products.",
-      "fullDescription": "This hands-on workshop will introduce participants to the core principles and methodologies of user experience design. Led by experienced UX professionals, the session will cover user research techniques, information architecture, wireframing, prototyping, and usability testing. Participants will work on practical exercises that simulate real-world design challenges, applying what they learn to create intuitive and user-friendly digital interfaces. By the end of the workshop, attendees will have developed a foundational understanding of the UX design process and created their own low-fidelity prototype. This workshop is ideal for students and professionals interested in human-centered design approaches.",
-      "image": "/event-004.jpg",
-      "joinLink": "https://example.com/join-ux-workshop",
-      "tags": ["design", "user experience", "prototyping"]
+      "id": "startup-incubation-cohort-3",
+      "title": "Startup Incubation Program – Cohort 3 Orientation",
+      "date": "2024-08-15",
+      "time": "Full Day Orientation",
+      "location": "Limkokwing Innovation Hub",
+      "description": "Welcome orientation for the 3rd Cohort of our Startup Incubation Program with university leadership and new student founders.",
+      "fullDescription": "Yesterday, the Limkokwing Innovation Hub proudly welcomed the 3rd Cohort of its Startup Incubation Program in an inspiring orientation session.\n\nThe session brought together newly selected student founders, faculty leaders, and university management, including the Deputy Campus Director Mr. Aiah James, and Heads of Faculties Mr. John T. Sesay (FBMG), Mr. Oluwatosin (FICT), Mr. Hassan Kamara (FCMB), and Madam Taricia (SSD).\n\nIn his remarks, Mr. James encouraged participants to make the most of this opportunity to build sustainable ventures, reaffirming the university's commitment to entrepreneurship and national development.\n\nMr. Bashir Muhammad Idris, Coordinator of the Innovation Hub, gave a comprehensive presentation on the program's structure, covering the frameworks, methodology and schedule.\n\nA big thank you to everyone who joined us. We're excited to see these young innovators take bold steps toward building impactful startups!",
+      "image": "/modern-event-space-presentation.jpg",
+      "joinLink": "#",
+      "tags": ["incubation", "startups", "orientation", "entrepreneurship"]
     }
   ]
 }

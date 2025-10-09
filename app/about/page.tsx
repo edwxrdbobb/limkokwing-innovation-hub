@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Carousel } from "@/components/ui/carousel"
 import { BentoGrid, BentoCard } from "@/components/ui/bento-grid"
+import { NinePhasesChart } from "@/components/ui/nine-phases-chart"
 import { Target, Eye, Heart, Lightbulb, Users, Award, Zap, Globe } from "lucide-react"
 
 export default function AboutPage() {
@@ -17,7 +18,7 @@ export default function AboutPage() {
     },
     {
       title: "Tech Labs & Equipment",
-      button: "See Technology",
+      button: "See Technology", 
       src: "/technology-lab-computers-equipment.jpg",
     },
     {
@@ -28,9 +29,9 @@ export default function AboutPage() {
   ]
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-w-full m-auto">
       {/* Hero Section */}
-      <section className="border-b border-border py-20">
+      <section className="border-b border-border py-20 max-w-7xl mx-auto">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <Badge className="mb-4 bg-chart-1/20 text-chart-1 hover:bg-chart-1/30">About Us</Badge>
@@ -43,7 +44,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-20 max-w-full mx-auto">
         <div className="container">
           <BentoGrid className="lg:grid-cols-2">
             <BentoCard className="border-chart-1/20 bg-gradient-to-br from-chart-1/5 to-transparent">
@@ -71,6 +72,32 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Nine Phases Chart Section */}
+      <section className="relative py-24 bg-gradient-to-br from-slate-500/10 via-gray-500/10 to-gray-500/40 overflow-hidden max-w-7xl mx-auto">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-blue-200 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-40 h-40 bg-purple-200 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-pink-200 rounded-full blur-3xl opacity-30"></div>
+        </div>
+        
+        {/* Subtle Grid Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+          </svg>
+        </div>
+        
+        <div className="relative z-10">
+          <NinePhasesChart />
+        </div>
+      </section>
+
       <section className="border-y border-border bg-card py-20">
         <div className="container">
           <div className="mb-12 text-center">
@@ -85,7 +112,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-20 max-w-7xl mx-auto">
         <div className="container">
           <div className="mb-16 text-center">
             <Badge className="mb-4 bg-chart-3/20 text-chart-3 hover:bg-chart-3/30">Our Values</Badge>
@@ -160,7 +187,7 @@ export default function AboutPage() {
       </section>
 
       {/* Achievements */}
-      <section className="border-t border-border bg-card py-20">
+      <section className="border-t border-border bg-card py-20 max-w-7xl mx-auto">
         <div className="container">
           <div className="mb-16 text-center">
             <Badge className="mb-4 bg-chart-1/20 text-chart-1 hover:bg-chart-1/30">

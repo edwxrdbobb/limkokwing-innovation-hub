@@ -34,12 +34,12 @@ export function EventModal({ eventId, isOpen, onClose }: EventModalProps) {
 
     const fetchEventData = async () => {
       try {
-        const response = await fetch("/data/events.json");
-        const data = await response.json();
-        const foundEvent = data.events.find((e: Event) => e.id === eventId);
-        
-        if (foundEvent) {
-          setEvent(foundEvent);
+        const response = await fetch(`/api/events/${eventId}`);
+        if (response.ok) {
+          const eventData = await response.json();
+          setEvent(eventData);
+        } else {
+          console.error("Event not found");
         }
         setLoading(false);
       } catch (error) {

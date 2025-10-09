@@ -24,9 +24,10 @@ export interface EventCard {
 interface AppleCardsCarouselProps {
   cards: EventCard[]
   className?: string
+  onCardClick?: (cardId: string) => void
 }
 
-export function AppleCardsCarousel({ cards, className }: AppleCardsCarouselProps) {
+export function AppleCardsCarousel({ cards, className, onCardClick }: AppleCardsCarouselProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(containerRef, { once: true, margin: "-100px" })
@@ -53,6 +54,7 @@ export function AppleCardsCarousel({ cards, className }: AppleCardsCarouselProps
             index={index}
             hoveredIndex={hoveredIndex}
             setHoveredIndex={setHoveredIndex}
+            onCardClick={onCardClick}
           />
         ))}
       </motion.div>
@@ -65,6 +67,7 @@ interface EventCardComponentProps {
   index: number
   hoveredIndex: number | null
   setHoveredIndex: (index: number | null) => void
+  onCardClick?: (cardId: string) => void
 }
 
 function EventCardComponent({
@@ -72,6 +75,7 @@ function EventCardComponent({
   index,
   hoveredIndex,
   setHoveredIndex,
+  onCardClick,
 }: EventCardComponentProps) {
   const ref = useRef<HTMLDivElement>(null)
   const distance = useMotionValue(0)
@@ -222,6 +226,7 @@ function EventCardComponent({
           >
             <Button
               size="sm"
+              onClick={() => onCardClick?.(card.id)}
               className={cn(
                 "w-full transition-all duration-300",
                 card.status === "upcoming"
@@ -239,7 +244,7 @@ function EventCardComponent({
             </Button>
           </motion.div>
         </div>
-
+ 
         {/* Hover Glow Effect */}
         <motion.div
           className="absolute inset-0 rounded-3xl opacity-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10"
