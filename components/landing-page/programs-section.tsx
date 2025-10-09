@@ -79,7 +79,7 @@ const programsData: Program[] = [
     colorIndex: 4,
     stats: [
       { label: "Student Members", value: "150+" },
-      { label: "Publications", value: "25+" }
+      { label: "Publications", value: "25+" } 
     ],
     learnMoreLink: "/programs/pressclub"
   },
@@ -106,12 +106,14 @@ const successMetrics: SuccessMetric[] = [
   { value: "1200+", label: "Jobs Created", colorIndex: 3 }
 ];
 
-export function ProgramsSection() {
+export function ProgramsSection({ isPrograms }: { isPrograms: boolean }) {
   return (
     <section className="relative py-20 max-w-7xl mx-auto">
       <BackgroundBeams />
       <div className="container relative z-10">
-        <div className="mb-16 text-center max-w-4xl mx-auto">
+        {
+          !isPrograms? 
+          <div className="mb-16 text-center max-w-4xl mx-auto">
           <Badge className="mb-4 bg-chart-2/20 text-chart-2 hover:bg-chart-2/30">Our Programs</Badge>
           <h2 className="mb-4 text-balance text-3xl font-bold md:text-4xl">
             Comprehensive Support for Entrepreneurs
@@ -120,7 +122,9 @@ export function ProgramsSection() {
             From ideation to scaling, we provide the tools, mentorship, and resources you need to succeed.
           </p>
         </div>
-
+        :
+        ""
+        }
         <BentoGrid>
           {programsData.map((program) => (
             <BentoCard 

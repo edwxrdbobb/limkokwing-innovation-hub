@@ -17,7 +17,7 @@
           "alt": "Pitch Day Group Photo"
         },
         {
-          "src": "/pitch-day-speaking.jpg",
+          "src": "/pitch-day-speaking.jpg", 
           "alt": "Entrepreneur Pitching"
         }
       ],
@@ -57,23 +57,19 @@
       "title": "TechConnect",
       "shortDescription": "A platform designed to connect students from different ICT-related degree programs. Creates a community for students to collaborate, learn, and share knowledge in technology through discussion forums, mentorship programs, job opportunities, and skill-building workshops.",
       "fullDescription": "TechConnect is a vibrant community platform that bridges the gap between students across various ICT-related disciplines at Limkokwing University. The initiative fosters collaboration, knowledge sharing, and professional development through a combination of online and offline activities.\n\nMembers gain access to discussion forums where they can exchange ideas, seek help, and share resources. Our mentorship program pairs experienced professionals with students, providing guidance and career advice. Regular skill-building workshops cover emerging technologies and industry best practices, ensuring members stay at the cutting edge of technological advancement.",
-      "imageSrc": "/technology-workshop-students-coding.jpg",
+      "imageSrc": "/tech-talk-banner.jpeg",
       "imageAlt": "TechConnect",
       "galleryImages": [
         {
-          "src": "/technology-lab-computers-equipment.jpg",
+          "src": "/tech-talk-banner.jpeg",
           "alt": "Technology Lab"
-        },
-        {
-          "src": "/modern-collaborative-workspace-students.jpg",
-          "alt": "Collaborative Workspace"
         },
         {
           "src": "/tech-connect.jpg",
           "alt": "TechConnect Workshop"
         }
       ],
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "videoUrl": "https://www.youtube.com/embed/T4D8Z_xfkhI?si=qv_Axxk4yjIzZ-kr",
       "colorIndex": 2,
       "stats": [
         { "label": "Active Members", "value": "500+" },
@@ -109,7 +105,7 @@
       "title": "StartupsConnect",
       "shortDescription": "A platform designed to connect students from different entrepreneurship-related programs within Limkokwing University and its community. Creates a community for students to collaborate, learn, and share knowledge in entrepreneurship, with focus on startup ventures through discussion forums, mentorship programs, and startup-focused workshops.",
       "fullDescription": "StartupsConnect is a dynamic platform that brings together entrepreneurially-minded students from across Limkokwing University's diverse programs. The initiative creates a supportive ecosystem where aspiring entrepreneurs can collaborate, share insights, and develop their business acumen.\n\nThrough our specialized discussion forums, members can exchange ideas, seek feedback, and find potential co-founders. Our mentorship program connects students with successful entrepreneurs who provide guidance based on real-world experience. Regular workshops focus on startup-specific topics such as business model validation, pitching, fundraising, and growth strategies.",
-      "imageSrc": "/modern-collaborative-workspace-students.jpg",
+      "imageSrc": "/startup-connect.jpeg",
       "imageAlt": "StartupsConnect",
       "galleryImages": [
         {
@@ -117,15 +113,15 @@
           "alt": "Startup Connect Event"
         },
         {
-          "src": "/meeting-001.jpg",
-          "alt": "Mentorship Meeting"
+          "src": "/startup-connect-banner001.png",
+          "alt": "Startup Connect Banner"
         },
         {
           "src": "/innovation-hub-event-presentation.jpg",
           "alt": "Startup Presentation"
         }
       ],
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "videoUrl": "https://www.youtube.com/embed/3IYUOuun3uk?si=lU7UEfovQV57JmH9",
       "colorIndex": 3,
       "stats": [
         { "label": "Network Size", "value": "300+" },
@@ -161,7 +157,7 @@
       "title": "Lim Press Club",
       "shortDescription": "Provides intellectual and professional support to communication students, with the goal of creating a platform for broadcasting and journalism students to gain practical knowledge of the field of journalism outside of the classroom.",
       "fullDescription": "The Lim Press Club is a professional development initiative designed specifically for communication, broadcasting, and journalism students at Limkokwing University. The club bridges the gap between classroom theory and real-world practice by providing hands-on experience in various aspects of media production and journalism.\n\nMembers have the opportunity to work on actual publications, develop multimedia content, and participate in reporting on campus and community events. Through workshops led by industry professionals, students learn practical skills in interviewing, writing, editing, broadcasting, and digital media production that complement their academic studies.",
-      "imageSrc": "/event-029.jpg",
+      "imageSrc": "/limpress001.jpg",
       "imageAlt": "Lim Press Club",
       "galleryImages": [
         {
@@ -169,7 +165,7 @@
           "alt": "Lim Press Club Meeting"
         },
         {
-          "src": "/event-0830.jpg",
+          "src": "/limpress001.jpg",
           "alt": "Press Coverage Event"
         },
         {
@@ -177,7 +173,7 @@
           "alt": "Journalism Workshop"
         }
       ],
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "videoUrl": "https://www.youtube.com/embed/WV-MmrulfVc?si=YS0GQkt5Xu_eTvFH",
       "colorIndex": 4,
       "stats": [
         { "label": "Student Members", "value": "150+" },
@@ -213,23 +209,23 @@
       "title": "Corporate Innovation & Industry Partnership",
       "shortDescription": "Connecting public and private sectors with entrepreneurs, creating a collaborative platform between government, industry, innovators, academia and start-ups/entrepreneurs to energize an active entrepreneurial ecosystem. Provides training, production and generation of new ideas, products and content powered by technology.",
       "fullDescription": "The Corporate Innovation & Industry Partnership program serves as a vital bridge between Limkokwing University's entrepreneurial ecosystem and external stakeholders from both public and private sectors. This initiative creates a collaborative platform that brings together government agencies, industry leaders, innovators, academic institutions, and emerging startups to foster innovation and economic growth.\n\nThrough structured partnerships, the program facilitates knowledge transfer, resource sharing, and collaborative projects that address real-world challenges. We provide specialized training programs, innovation workshops, and co-creation opportunities that generate new ideas, products, and technology-powered solutions. The program also offers corporate partners access to fresh talent and innovative thinking, while providing entrepreneurs with industry insights, mentorship, and potential market opportunities.",
-      "imageSrc": "/technology-lab-computers-equipment.jpg",
+      "imageSrc": "/freelancer-003.jpg",
       "imageAlt": "Corporate Innovation & Industry Partnership",
       "galleryImages": [
         {
-          "src": "/modern-event-space-presentation.jpg",
+          "src": "/ghana-day-002-01.jpg",
           "alt": "Corporate Partnership Event"
         },
         {
-          "src": "/img114.jpg",
+          "src": "/ghana-day-02.jpg",
           "alt": "Industry Workshop"
         },
         {
-          "src": "/img82.jpg",
+          "src": "/freelancer-003.jpg",
           "alt": "Innovation Lab"
         }
       ],
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "videoUrl": "https://www.youtube.com/embed/C7AU10E1os8?si=ZMuIlvJdch2dsu7S",
       "colorIndex": 5,
       "stats": [
         { "label": "Partner Companies", "value": "50+" },
