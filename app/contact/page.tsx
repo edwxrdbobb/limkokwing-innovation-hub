@@ -7,9 +7,9 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react"
 
 export default function ContactPage() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-w-full mx-auto">
       {/* Hero Section */}
-      <section className="border-b border-border py-20">
+      <section className="border-b border-border py-20 max-w-7xl mx-auto">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="mb-6 text-balance text-4xl font-bold md:text-5xl lg:text-6xl">Get in Touch</h1>
@@ -22,7 +22,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-20">
+      <section className="py-20 max-w-7xl mx-auto">
         <div className="container">
           <div className="grid gap-12 lg:grid-cols-2">
             {/* Contact Form */}
@@ -72,7 +72,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-8 max-w-7xl mx-auto">
               <div>
                 <h2 className="mb-6 text-2xl font-bold">Contact Information</h2>
                 <div className="space-y-6">
@@ -83,8 +83,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="mb-1 font-semibold">Email</h3>
-                        <p className="text-sm text-muted-foreground">info@limkokwing.edu</p>
-                        <p className="text-sm text-muted-foreground">admissions@limkokwing.edu</p>
+                        <p className="text-sm text-muted-foreground">bashir.mohammad@limkokwing.edu.sl</p>
+                        {/* <p className="text-sm text-muted-foreground">info@limkokwing.edu.sl</p> */}
                       </div>
                     </CardContent>
                   </Card>
@@ -96,8 +96,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="mb-1 font-semibold">Phone</h3>
-                        <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
-                        <p className="text-sm text-muted-foreground">+1 (555) 987-6543</p>
+                        <p className="text-sm text-muted-foreground">+232 (76) 838-435</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -109,9 +108,9 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="mb-1 font-semibold">Address</h3>
-                        <p className="text-sm text-muted-foreground">123 University Avenue</p>
-                        <p className="text-sm text-muted-foreground">Innovation District</p>
-                        <p className="text-sm text-muted-foreground">City, State 12345</p>
+                        <p className="text-sm text-muted-foreground">No 51 Regent Road</p>
+                        <p className="text-sm text-muted-foreground">Hill Station</p>
+                        <p className="text-sm text-muted-foreground">Freetown, Western Area, SL</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -137,14 +136,14 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="border-t border-border bg-card py-20">
-        <div className="container">
+      <section className="border-t border-border bg-card py-20 max-w-full mx-auto">
+        <div className="container max-w-full w-[80vw] mx-auto">
           <h2 className="mb-8 text-center text-2xl font-bold md:text-3xl">Visit Our Campus</h2>
           <div className="overflow-hidden rounded-lg border border-border">
             <div className="aspect-video w-full bg-muted">
               <div className="flex h-full items-center justify-center text-muted-foreground">
                 <MapPin className="mr-2 h-6 w-6" />
-                <span>Map placeholder - 123 University Avenue, Innovation District</span>
+                <span>Map placeholder - Limkokwing University Sierra Leone Campus</span>
               </div>
             </div>
           </div>
@@ -152,7 +151,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20">
+      <section className="py-20 max-w-7xl mx-auto">
         <div className="container">
           <div className="mx-auto max-w-3xl">
             <h2 className="mb-8 text-center text-2xl font-bold md:text-3xl">Frequently Asked Questions</h2>

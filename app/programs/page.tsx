@@ -8,9 +8,9 @@ import { ProgramsSection } from "@/components/landing-page/programs-section"
 
 export default function ProgramsPage() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-w-full mx-auto">
       {/* Hero Section */}
-      <section className="border-b border-border py-20">
+      <section className="border-b border-border py-20 max-w-7xl mx-auto">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="mb-6 text-balance text-4xl font-bold md:text-5xl lg:text-6xl">Our Programs</h1>
@@ -24,7 +24,7 @@ export default function ProgramsPage() {
       <ProgramsSection isPrograms={true} />
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-20 max-w-7xl mx-auto">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 text-balance text-3xl font-bold md:text-4xl">Ready to Apply?</h2>

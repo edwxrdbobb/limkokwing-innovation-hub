@@ -21,13 +21,15 @@ interface EventCard {
 
 interface EventsSectionProps {
   eventCards?: EventCard[]
+  isEventsPage?: false
 }
 
-export function EventsSection({ eventCards }: EventsSectionProps) {
+export function EventsSection({ eventCards, isEventsPage }: EventsSectionProps) {
   const [selectedEventId, setSelectedEventId] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [events, setEvents] = useState<any[]>([]);
-  
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+
   useEffect(() => {
     // Fetch events from the API
     const fetchEvents = async () => {
@@ -39,7 +41,6 @@ export function EventsSection({ eventCards }: EventsSectionProps) {
         console.error("Error fetching events:", error);
       }
     };
-    
     fetchEvents();
   }, []);
 
@@ -85,7 +86,7 @@ export function EventsSection({ eventCards }: EventsSectionProps) {
       time: "Full Day Event",
       location: "Faculty of Business Management & Globalisation",
       attendees: 85,
-      image: "/event-0830.jpg",
+      image: "/pitch-day.jpg",
       category: "Innovation",
       status: "past" as const,
     },
@@ -97,7 +98,7 @@ export function EventsSection({ eventCards }: EventsSectionProps) {
       time: "Multiple Sessions",
       location: "Limkokwing Innovation Hub",
       attendees: 110,
-      image: "/innovation-hub-event-presentation.jpg",
+      image: "/ready-salone-meetup001.jpg",
       category: "Training",
       status: "past" as const,
     },
@@ -109,34 +110,59 @@ export function EventsSection({ eventCards }: EventsSectionProps) {
       time: "Full Day Orientation",
       location: "Limkokwing Innovation Hub",
       attendees: 50,
-      image: "/modern-event-space-presentation.jpg",
+      image: "/startup-incubation002.jpg",
       category: "Incubation",
       status: "past" as const,
     },
-  ]
+  ];
 
-  const cardsToDisplay = eventCards || (events.length > 0 ? convertedEvents : defaultEventCards)
+  const cardsToDisplay = eventCards || (events.length > 0 ? convertedEvents : defaultEventCards);
+
+  // Collect all unique categories from cards
+  const allCategories = [
+    "All",
+    ...Array.from(new Set((eventCards || (events.length > 0 ? convertedEvents : defaultEventCards)).map(card => card.category)))
+  ];
+
+  // Filter cards based on selected category
+  const filteredCards = selectedCategory === "All"
+    ? (eventCards || (events.length > 0 ? convertedEvents : defaultEventCards))
+    : (eventCards || (events.length > 0 ? convertedEvents : defaultEventCards)).filter(card => card.category === selectedCategory);
 
   return (
     <>
       <section className="border-y border-border bg-card py-20 max-w-7xl mx-auto">
         <div className="container">
-          <div className="mb-16 text-center max-w-4xl mx-auto">
-            <Badge className="mb-4 bg-chart-3/20 text-chart-3 hover:bg-chart-3/30">
-              <Calendar className="mr-2 h-3 w-3" />
-              Latest Events
-            </Badge>
-            <h2 className="mb-4 text-balance text-3xl font-bold md:text-4xl">What's Happening at the Innovation Hub</h2>
-            <p className="mx-auto max-w-2xl text-pretty text-muted-foreground">
-              Stay updated with our latest programs, events, and opportunities to connect with the innovation
-              community.
-            </p>
+          {/* Filtering Tags UI */}
+          <div className="flex flex-wrap gap-2 mb-8 justify-center">
+            {allCategories.map(category => (
+              <button
+                key={category}
+                className={`px-4 py-2 rounded-full border cursor-pointer ${selectedCategory === category ? "bg-chart-1/80 text-white" : "bg-gray-200/25 text-chart-1 hover:bg-chart-1 hover:text-white"}`}
+                onClick={() => setSelectedCategory(category)}
+              >
+                {category}
+              </button> 
+            ))}
           </div>
-
-          <AppleCardsCarousel cards={cardsToDisplay} onCardClick={handleEventClick} />
+          {
+            !isEventsPage?
+              <div className="mb-16 text-center max-w-4xl mx-auto">
+                <Badge className="mb-4 bg-chart-3/20 text-chart-3 hover:bg-chart-3/30">
+                  <Calendar className="mr-2 h-3 w-3" />
+                  Latest Events
+                </Badge>
+                <h2 className="mb-4 text-balance text-3xl font-bold md:text-4xl">What's Happening at the Innovation Hub</h2>
+                <p className="mx-auto max-w-2xl text-pretty text-muted-foreground">
+                  Stay updated with our latest programs, events, and opportunities to connect with the innovation
+                  community.
+                </p>
+              </div>
+                : ''
+          }
+          <AppleCardsCarousel cards={filteredCards} onCardClick={handleEventClick} />
         </div>
       </section>
-      
       {selectedEventId && (
         <EventModal 
           eventId={selectedEventId}
@@ -148,5 +174,5 @@ export function EventsSection({ eventCards }: EventsSectionProps) {
         />
       )}
     </>
-  )
+  );
 }

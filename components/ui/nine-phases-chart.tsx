@@ -163,7 +163,7 @@ export function NinePhasesChart() {
   const [hoveredPhase, setHoveredPhase] = useState<number | null>(null)
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-6 py-16"> 
+    <div className="w-full max-w-7xl mx-auto px-6 py-16"> 
       <div className="text-center mb-20">
         <Badge className="mb-6 px-4 py-2 bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 border border-blue-200 font-medium">
           LEAP Program Methodology

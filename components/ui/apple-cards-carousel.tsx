@@ -133,10 +133,11 @@ function EventCardComponent({
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}
       className="relative flex-shrink-0 w-80 cursor-pointer"
+      onClick={() => onCardClick?.(card.id)} // <-- Add this line
     >
       <motion.div
         className={cn(
-          "relative h-96 w-full rounded-3xl overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black border border-gray-700/50 backdrop-blur-sm",
+          "relative h-96 w-full rounded-3xl overflow-hidden bg-gradient-to-br from-gray-200 dark:from-gray-900 via-gray-300 dark:via-gray-800 to-gray-200 dark:to-black border border-gray-700/50 backdrop-blur-sm",
           hoveredIndex === index && "shadow-2xl shadow-blue-500/20"
         )}
         whileHover={{ 
@@ -188,32 +189,32 @@ function EventCardComponent({
             animate={hoveredIndex === index ? { y: -4 } : { y: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <h3 className="text-xl font-bold text-white line-clamp-2 leading-tight">
+            <h3 className="text-xl font-bold text-black dark:text-white line-clamp-2 leading-tight">
               {card.title}
             </h3>
-            <p className="text-sm text-gray-300 line-clamp-2">
+            <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-2">
               {card.description}
             </p>
           </motion.div>
 
           <div className="space-y-3">
-            <div className="flex items-center gap-2 text-sm text-gray-400">
+            <div className="flex items-center gap-2 text-sm text-blue-400 dark:text-gray-400">
               <Calendar className="h-4 w-4" />
               <span>{card.date}</span>
             </div>
 
-            <div className="flex items-center gap-2 text-sm text-gray-400">
+            <div className="flex items-center gap-2 text-sm text-blue-400 dark:text-gray-400">
               <Clock className="h-4 w-4" />
               <span>{card.time}</span>
             </div>
 
-            <div className="flex items-center gap-2 text-sm text-gray-400">
+            <div className="flex items-center gap-2 text-sm text-blue-400 dark:text-gray-400">
               <MapPin className="h-4 w-4" />
               <span className="truncate">{card.location}</span>
             </div>
 
             {card.attendees && (
-              <div className="flex items-center gap-2 text-sm text-gray-400">
+              <div className="flex items-center gap-2 text-sm text-blue-400 dark:text-gray-400">
                 <Users className="h-4 w-4" />
                 <span>{card.attendees} attendees</span>
               </div>
@@ -226,7 +227,7 @@ function EventCardComponent({
           >
             <Button
               size="sm"
-              onClick={() => onCardClick?.(card.id)}
+              // Remove onClick from here
               className={cn(
                 "w-full transition-all duration-300",
                 card.status === "upcoming"

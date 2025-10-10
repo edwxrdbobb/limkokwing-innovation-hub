@@ -54,13 +54,13 @@ export function EventModal({ eventId, isOpen, onClose }: EventModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+    <div className="fixed inset-0 bg-black z-50 flex items-center justify-center p-4">
+      <div className="bg-white dark:bg-gray-200/10 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
         <div className="relative">
           {/* Close button */}
           <button 
             onClick={onClose}
-            className="absolute top-4 right-4 z-10 bg-white rounded-full p-1 shadow-md hover:bg-gray-100 transition-colors"
+            className="absolute top-4 right-4 z-10 bg-white dark:bg-gray-700/75 cursor-pointer rounded-full p-1 shadow-md hover:bg-gray-100 transition-colors"
           >
             <X className="h-6 w-6" />
           </button>
@@ -93,7 +93,7 @@ export function EventModal({ eventId, isOpen, onClose }: EventModalProps) {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {event.tags.map((tag) => (
-                    <Badge key={tag} variant="outline" className="bg-blue-50">
+                    <Badge key={tag} variant="outline" className="bg-green-500">
                       {tag}
                     </Badge>
                   ))}
@@ -102,7 +102,7 @@ export function EventModal({ eventId, isOpen, onClose }: EventModalProps) {
                 <div className="space-y-4 mb-6">
                   <div className="flex items-center text-gray-700">
                     <Calendar className="h-5 w-5 mr-2 text-blue-600" />
-                    <span>{new Date(event.date).toLocaleDateString('en-US', { 
+                    <span className="text-gray-700 dark:text-gray-300">{new Date(event.date).toLocaleDateString('en-US', { 
                       weekday: 'long', 
                       year: 'numeric', 
                       month: 'long', 
@@ -112,12 +112,12 @@ export function EventModal({ eventId, isOpen, onClose }: EventModalProps) {
                   
                   <div className="flex items-center text-gray-700">
                     <Clock className="h-5 w-5 mr-2 text-blue-600" />
-                    <span>{event.time}</span>
+                    <span className="text-gray-700 dark:text-gray-300">{event.time}</span>
                   </div>
                   
                   <div className="flex items-center text-gray-700">
                     <MapPin className="h-5 w-5 mr-2 text-blue-600" />
-                    <span>{event.location}</span>
+                    <span className="text-gray-700 dark:text-gray-300">{event.location}</span>
                   </div>
                 </div>
                 
